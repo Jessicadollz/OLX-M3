@@ -1,5 +1,5 @@
 # OLX Website Replicate
-[Hosted Link](https://jessicadollz.github.io/OLX-MCT3/)
+[Hosted Link](https://jessicadollz.github.io/OLX-M3/)
 
 This project is a simplified version of an OLX-like website, created using HTML and CSS. The website provides a platform for users to post and browse classified ads for various products and services.
 
@@ -24,5 +24,5 @@ A form for users to contact sellers.
 
 ## Hosted Link
 
-You can access a live demo of the project [here](https://jessicadollz.github.io/OLX-MCT3/).
+You can access a live demo of the project [here](https://jessicadollz.github.io/OLX-M3/).
 
