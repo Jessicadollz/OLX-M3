@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 10px 20px; 
+    border-bottom: 1px solid #ddd; 
+    background-color: white;
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header > * {
+    display: flex;
+    align-items: center;
+}
+
+.searchBox  {
+    height: 40px;
+    width: 370px;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.searchBox input {
+    height: 50px;
+    width: 350px;
+}
+
+.searchBox i {
+    width: 20px;
+}
+
+.searchBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.inputContainer .fa-magnifying-glass {
+    position: absolute;
+    left: 10px; 
+    color: white;
+}
+
+.inputContainer .dropdownButton {
+    position: absolute;
+    right: 5px; 
+    background: none;
+    border: none;
+    top: 50%;
+    transform: translateY(10px);
+    transform: translateX(-20px);
+}
+
+.input {
+    padding-left: 40px; 
+    padding-right: 40px; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inputWrapper input {
+    height: 50px;
+    width: 500px;
+}
+
+.inputWrapper .searchInput {
+    padding-left: 10px; 
+    box-sizing: border-box;
+}
+
+.inputWrapper .fa-magnifying-glass {
+    position: absolute;
+    right: 10px; 
+   /* top: 50%; 
+    transform: translateY(-50%); */
+    transform: translateX(-470px); 
+    color: black;
+    cursor: pointer;
+}
+
+
+.form {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+}
+
+.form form {
+    margin: 0; 
+}
+
+.form select {
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px; 
+    background-color: #fff; 
+    cursor: pointer; 
+    outline: none; 
+}
+
+.form select:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); 
+}
+
+.form label {
+    display: none; 
+}
+
+.btn {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 10px; 
+    border-radius: 25px;
+    background-color: khaki;
+    color: black;
+    width: 100px;
+    height: 50px;
+}
+
+.btn > button > .material-symbols-outlined {
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.btn button {
+    display: flex; 
+    align-items: center; 
+    color: black;
+    border: none; 
+    border-radius: 25px;
+    /* padding: 10px 20px;  */
+    font-size: 20px;
+    font-weight: 900;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s; 
+    border: 5px solid brown;
+}
+
+.btn button:hover {
+    background: linear-gradient(black, brown);
+    border-radius: 25px;
+    border: 5px solid brown;
+    color: white;
+} 
+
+.btn .material-symbols-outlined {
+    font-size: 20px; 
+    margin-right: 8px; 
+}
+
+.head2 {
+    background-color: whitesmoke;
+    margin-top: 6.5rem;
+}
+
+.head2 #dropdown {
+    transform: translateY(5px);
+}
+.head2 ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; 
+    padding-left: 50px;
+}
+
+.head2 li {
+    margin-right: 20px; 
+    padding: 10px; 
+    cursor: pointer; 
+}
+
+.head2 li:last-child {
+    margin-right: 0; 
+}
+
+.advertisement {
+    margin: 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+    padding: 0 10%;
+}
+
+.grid-container > .item  {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+ .grid-container > .item > .image img {
+     width: 100%;
+     object-fit: cover;
+     max-height: 15rem;
+ }
+
+ .grid-container > .item > .image img:hover {
+  width: 100%;
+  object-fit: cover;
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%);
+}
+
+ .grid-container > .item > .content {
+  text-decoration: none;
+  color: rgb(74, 73, 73);
+  text-align: start;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  padding-top: 20px;
+ }
+
+.grid-container > .item > .content:hover {
+ text-decoration: none;
+ color: #672717;
+ cursor: pointer;
+}
+
+.grid-container > .item > .content > .sell {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #002f34;
+}
+
+.grid-container > .item > .content > .des {
+    font-size: 1rem;
+}
+
+.item {
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+.load {
+    display: flex;
+    justify-content: center; /* Centers the button horizontally */
+    align-items: center;
+}
+
+.load button {
+    height: 50px;
+    width: 150px;
+    background-color: #002f34;
+    color: white;
+    margin: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.load button:hover {
+    background-color: transparent;
+    color: #002f34;
+    border: 2px solid #002f34;
+}
+
+.favorite-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    color: black; 
+}
+
+.favorite-icon:hover {
+    background-color: red; 
+    color: white; 
+}
+
+.vl {
+    border-left: 3px solid gray;
+    height: 100px;
+  }
+
+footer {
+    padding: 0;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+footer div p {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.footer1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.footer-image {
+    max-width: 650px;
+    margin-right: 20px;
+}
+
+.footer-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-side-by-side {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.vl {
+    border-left: 5px solid #ccc;
+    height: 200px;
+    margin: 0 20px;
+}
+
+.footer-app-links {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-app-links img {
+    max-width: 120px;
+}
+
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e1e1e1;
+}
+
+.footer2 > div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer2 > div > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer2 > div > ul > li {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.footer2 > div > ul > li:hover {
+    color: #002f34;
+}
+
+.footer2 > div > p {
+    font-size: 1rem;
+}
+
+.footer3 {
+    background-color: #002f34;
+}
+
+.footer3 ul {
+    display: flex;
+    padding: 0;
+    margin: 30px;
+    list-style: none; 
+    background-color: #002f34;
+    column-gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer3 p {
+    text-align: center;
+    background-color: #002f34;
+    color: #ccc;
+}
+
+.footer3 li {
+    margin-right: 25px; 
+    margin-left: 25px;
+}
+
+.footer3 img {
+    max-width: 150px; 
+    height: 150px;
+}
+
+.footer3 li .img1 {
+    border-right: 7px solid white;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .header {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        row-gap: 50px;
+        background-color: whitesmoke;
+    } 
+    
+    .advertisement {
+        margin-top: 7rem;
+    }
+
+    .products {
+        margin-top: 5rem;
+    }
+
+    .products .grid-container {
+        display: flex;
+        flex-direction: column;
+     }
+
+     .searchBox,
+    .inputWrapper {
+        display: none;
+    }
+
+    .head2  {
+        display: none ;
+    }
+
+    footer > .footer1, .footer2, .footer3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer > .footer1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > .footer3 > ul > li > img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer > .footer3 > p {
+        text-align: center;
+    }
+}

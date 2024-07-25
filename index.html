@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLX</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header" >
+        
+        <!--img src="./images/Footer/2.svg" alt="" height="70px" width="70px"-->
+        <svg width="60px" height="60px" viewBox="0 0 1024 1024" data-aut-id="icon" class="" fill-rule="evenodd"><path class="rui-w4DG7" d="M661.333 256v512h-128v-512h128zM277.333 298.667c117.824 0 213.333 95.531 213.333 213.333s-95.509 213.333-213.333 213.333c-117.824 0-213.333-95.531-213.333-213.333s95.509-213.333 213.333-213.333zM794.496 384l37.504 37.504 37.504-37.504h90.496v90.496l-37.504 37.504 37.504 37.504v90.496h-90.496l-37.504-37.504-37.504 37.504h-90.496v-90.496l37.504-37.504-37.504-37.504v-90.496h90.496zM277.333 426.667c-47.061 0-85.333 38.293-85.333 85.333s38.272 85.333 85.333 85.333c47.061 0 85.333-38.293 85.333-85.333s-38.272-85.333-85.333-85.333z"></path></svg>
+                        <div class="searchBox">    
+                            <div class="inputContainer">
+                                <i class="fa-solid fa-magnifying-glass" style="color: black;"></i>
+                                <input class="input" placeholder="Search city, area or locality" value="India">
+                                <span class="_3UNpw">
+                                    <button type="button" class="dropdownButton" role="button">
+                                        <i class="fa-solid fa-caret-down" ></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+
+                       
+                            <div class="inputWrapper">
+                                <input type="text" class="searchInput" placeholder="Find Cars, Mobile Phones and more..." data-aut-id="searchBox" value="">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+
+                            <div class="form">
+                                <form>
+                                    <label for="lang"></label>
+                                    <select name="lang" id="lang">
+                                      <option value="English">English</option>
+                                      <option value="Hindi">हिंदी</option>
+                                    </select>
+                                    
+                                  </form>
+                                  
+                            </div>
+
+                            <div class="login" style="color: #002f34; font-size: 1.5rem; text-decoration: underline; cursor: pointer;">Login</div>
+
+                            <div class="btn">
+                                <button>
+                                        <span class="material-symbols-outlined">
+                                            add
+                                            </span>Sell
+                                </button>
+                            </div>
+
+    </header>
+    
+
+    <div class="head2">
+        <ul style="list-style-type:none;">
+            <li>ALL CATEGORIES <span id="dropdown" class="material-symbols-outlined">
+                keyboard_arrow_down
+                </span></li>
+            <li>Cars</li>
+            <li>Motorcycles</li>
+            <li>Mobile Phones</li>
+            <li>For Sale: Houses & Apartments</li>
+            <li>Scooters</li>
+            <li>Commercial & Other Vehicles</li>
+            <li>For Rent: Houses & Apartments</li>
+          </ul>  
+    </div>
+
+    <div class="advertisement">
+        <img src="./images/ad.jpg" alt="" width="100%" height="350px">
+    </div>
+
+    <div class="products"> <br> <br> <br>
+        <h1 style="padding-left: 50px; font-size: 2.5rem;">Fresh Recommendations</h1> <br> <br>
+        <div class="grid-container">
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f1.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹8,999</h4>
+                <p>IKEA Kallax Shelf Unit</p> <br> <br> 
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f2.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹18,500</h4>
+                <p>Urban Ladder Brushed Oak Sofa Set</p> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f3.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹27,000</h4>
+                <p>Godrej Interio Riva 3-Seater Sofa</p> <br>
+                <div class="sell"> Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f4.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹21,999</h4>
+                <p>Pepperfry Boho Chic Sofa</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/watches/w1.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹8,50,000</h4>
+                <p>Rolex Submariner </p> 
+                <!--p class="des">The dial showcases a beautiful enamel finish, and the watch is water-resistant up to 50 meters, making it a perfect choice for both formal and casual occasions.</p-->
+                      <br>      
+        <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/watches/w2.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹41,900</h4>
+                <p>Apple Watch Series 7</p> 
+                <!--p class="des">With GPS capabilities, water resistance up to 50 meters, and seamless integration with iOS, it’s perfect for fitness enthusiasts and tech lovers alike.</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/watches/w3.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹25,000</h4>
+                <p>Casio G-Shock Rangeman</p> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/watches/w4.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹19,995</h4>
+                <p>Titan Edge Ceramic</p> 
+                <!--p class="des">It's a versatile accessory for both casual and active lifestyles.</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m1.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹64,999</h4>
+                <p>OnePlus 11 Pro</p> 
+                <!--p class="des"> It’s powered by the Exynos 2100 processor and comes with 8GB of RAM and 128GB of internal storage</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m10.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹52,999</h4>
+                <p>Xiaomi Mi 12</p> 
+                <!--p class="des"> It’s powered by the Exynos 2100 processor and comes with 8GB of RAM and 128GB of internal storage.</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m3.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,24,999</h4>
+                <p>Samsung Galaxy S23 Ultra</p>
+                <!--p class="des"> It’s powered by the Exynos 2100 processor and comes with 8GB of RAM.</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m4.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,39,900</h4>
+                <p>iPhone 14 Pro Max</p> 
+                <!--p class="des"> It’s powered by the Exynos 2100 processor and comes with 8GB RAM.</p-->
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a1.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹5,99,000</h4>
+                <p>Maruti Suzuki Swift</p>
+                <!--p class="des">The car has a spacious cabin with comfortable seating and ample cargo space</p--> 
+                <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a2.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹10,44,000</h4>
+                <p>Hyundai Creta</p> 
+                <!--p class="des">The car has a spacious cabin with comfortable seating and ample cargo space</p--> 
+                <br>
+            <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+             
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a3.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹8,99,000</h4>
+                <p>Renault Kwid 2015</p>  <br>
+                <!--p class="des">The car has a spacious cabin with comfortable seating and ample cargo space</p--> 
+                <br>
+                <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a4.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹13,53,000</h4>
+                <p>Mahindra Thar</p> 
+                <!--p class="des">The car has a spacious cabin with comfortable seating and ample cargo space</p--> 
+                <br>
+
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l1.avif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,24,000</h4>
+                <p>Dell XPS 13</p> 
+                <!--p class="des">Intel Core i7 processor, 16GB RAM, and 512GB SSD, offering high performance in a sleek and portable design.</p-->
+                <br> 
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l2.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹92,900</h4>
+                <p>Apple MacBook Air (M1)</p>
+                <!--p class="des">Premium ultrabook featuring a 13.4-inch 4K InfinityEdge display, Intel Core i7 processor, 16GB RAM, and 512GB SSD, offering high performance in a sleek and portable design.</p-->
+                <br> <br> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l3.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,10,000</h4>
+                <p>HP Spectre x360</p> 
+                <!--p class="des">Premium ultrabook featuring a 13.4-inch 4K InfinityEdge display, Intel Core i7 processor, 16GB RAM, and 512GB SSD, offering high performance in a sleek and portable design.</p-->
+                <br> <br> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l4.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,36,990</h4>
+                <p>Asus ROG Zephyrus G14</p> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f5.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹35,000</h4>
+                <p>Elegant Wooden Dining Table</p> <br> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f6.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹45,000</h4>
+                <p>Comfortable Leather Sofa </p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f7.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹12,000</h4>
+                <p>Modern Furniture Table</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Furniture/f8.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹8,000</h4>
+                <p>KL Furniture</p> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a5.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹10,00,000</h4>
+                <p>Hyundai Creta</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a6.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹6,50,000</h4>
+                <p>Maruti Suzuki Swift</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a7.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹14,00,000</h4>
+                <p>Tata Harrier</p> <br> 
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Automobile/a8.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹12,00,000</h4>
+                <p>Honda City</p> <br>  <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m5.jfif" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹70,000</h4>
+                <p>Samsung Galaxy S21</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m6.png" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹65,000</h4>
+                <p>OnePlus 9 Pro</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m7.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹80,000</h4>
+                <p>Apple iPhone 13</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Mobile/m8.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹60,000</h4>
+                <p>Xiaomi Mi 11 Ultra</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l5.jpg" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,20,000</h4>
+                <p>Dell XPS 13</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l6.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹92,000</h4>
+                <p>Apple MacBook Air M1</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l7.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,10,000</h4>
+                <p>HP Spectre x360</p> <br> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+              <div class="item">
+                <div class="image">
+                    <img src="./images/Laptop/l8.webp" decoding="async">
+                    <span class="material-symbols-outlined favorite-icon"> favorite </span>
+                </div>
+                 <div class="content">
+                  <h4>Price: ₹1,50,000</h4>
+                <p>Lenovo ThinkPad</p> <br>
+                <div class="sell">Jayanagar Colony - July 25, 2024</div>
+            </div>
+              </div>
+
+
+            </div>
+    </div> <br> <br> <br>
+    <div class="load">
+        <button class="load-more">LOAD MORE</button>
+    </div>
+<br> <br> <br>
+    <footer>     
+            <div class="footer1">
+                <img src="https://statics.olx.in/external/base/img/phone-app.png" alt="" class="footer-image">
+                <div class="footer-content">
+                    <h1>TRY THE OLX APP</h1> <br>
+                    <p>Buy, sell and find just about anything using the app on your mobile.</p>
+                    </div>
+                    <div class="footer-side-by-side">
+                        <div class="vl"></div>
+                        <div class="text-and-links">
+                            <p>GET YOUR APP TODAY</p> <br>
+                            <div class="footer-app-links">
+                                <img src="./images/appstore.webp" alt="App Store">
+                                <img src="./images/googleplay.webp" alt="Google Play">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+        
+            <div class="footer2">
+                <div class=""><p>POPULAR LOCATIONS</p>
+                    <ul>
+                        <li>Kolkata</li>
+                        <li>Mumbai</li>
+                        <li>Chennai</li>
+                        <li>Pune</li>
+                    </ul>
+                    
+                </div>
+                <div class=""><p>TRENDING LOCATIONS</p>
+                    <ul>
+                        <li>Bhubaneshwar</li>
+                        <li>Hyderabad</li>
+                        <li>Chandigarh</li>
+                        <li>Nashik</li>
+                    </ul>
+                </div>
+                <div class=""><p>ABOUT US</p>
+                    <ul>
+                        <li>Contact Us</li>
+                        <li>Tech@OLX</li>
+                    </ul>
+                </div>
+                <div class=""><p>OLX</p>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Help</li>
+                        <li>Sitemap</li>
+                        <li>Legal & Privacy Information</li>
+                        <li>Vulnerability Disclosure Program</li>
+                    </ul>
+                </div>
+                <div class=""><p>FOLLOW US</p>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-youtube"></i>
+                        </li>
+                        <li> <br> <br> <br>
+                            <div class="text-and-links">
+                                <div class="footer-app-links">
+                                    <img src="./images/appstore.webp" alt="App Store">
+                                    <img src="./images/googleplay.webp" alt="Google Play">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer3" style="justify-content: center;">
+                <ul>
+                <li><img src="./images/Footer/1.png" alt=""></li>
+                <li><img src="./images/Footer/2.svg" alt=""></li>
+                <li><img src="./images/Footer/3.png" alt=""></li>
+                <li><img src="./images/Footer/4.png" alt=""></li>
+                <li><img src="./images/Footer/5.png" alt=""></li>
+                <li><img src="./images/Footer/6.png" alt=""></li>
+                </ul>
+                <p style="font-size: 1rem; justify-content: center;">All rights reserved © 2006-2024 OLX</p> <br> <br>
+            </div>
+    </footer>
+</body>
+</html>
